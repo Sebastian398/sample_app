@@ -1,0 +1,5 @@
+.cache/
+.vscode-remote-containers/
+.docker/
+node_modules/
+dist/
