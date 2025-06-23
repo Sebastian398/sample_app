@@ -2,9 +2,6 @@
   "name": "sample-app",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-  "cypress": "^14.4.1"
-},
   "scripts": {
   "start": "node index.js",
   "cy:run": "cypress run --reporter mochawesome --reporter-options reportDir=mochawesome-report,overwrite=false,html=true,json=false"
