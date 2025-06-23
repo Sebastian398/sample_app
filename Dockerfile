@@ -6,6 +6,8 @@ COPY . .
 
 RUN npm install
 
+RUN npx cypress install
+
 EXPOSE 5050
 
 CMD ["npm", "start"]
