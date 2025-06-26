@@ -17,4 +17,4 @@ app.post('/login', (req, res) => {
 app.get('/dashboard', (req, res) => {
  res.send('<h1>Bienvenido al dashboard</h1>');
 });
-app.listen(PORT, () => console.log(`Servidor en http://localhost:${PORT}/login`))
+app.listen(PORT, () => console.log(`Servidor en http://localhost:${PORT}`))
