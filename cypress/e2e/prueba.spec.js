@@ -1,6 +1,6 @@
 describe('Prueba de login', () => {
  it('verifica que el login funcione', () => {
- cy.visit('/login');
+ cy.visit('');
  cy.get('#username').type('admin');
  cy.get('#password').type('admin123');
  cy.get('button[type="submit"]').click();
