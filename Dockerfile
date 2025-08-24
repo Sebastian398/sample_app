@@ -1,4 +1,4 @@
-From cypress/base:18
+FROM cypress/base:18
 
 FROM node:18
 
