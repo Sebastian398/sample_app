@@ -12,7 +12,7 @@ services:
      - jenkinsnet
 
  jenkins:
-   image: jenkins/jenkins:lts-jdk11
+   image: jenkins/jenkins:lts-jdk17
    container_name: jenkins_server
    ports:
      - '8080:8080'
