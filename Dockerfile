@@ -1,8 +1,8 @@
 FROM cypress/base:18.20.3
 
-WORKDIR /app
+FROM node:18
 
-COPY package*.json ./
+WORKDIR /app
 
 RUN npm install
 
