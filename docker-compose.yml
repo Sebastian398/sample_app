@@ -31,6 +31,7 @@ services:
      dockerfile: Dockerfile.cypress
    depends_on:
      - app
+   user: root
    entrypoint: ["npm", "run", "cy:run"]
    volumes:
      - .:/e2e
