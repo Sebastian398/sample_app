@@ -1,12 +1,12 @@
 FROM cypress/base:18.20.3
 
-FROM node:18
-
 WORKDIR /app
 
-COPY . .
+COPY package*.json ./
 
 RUN npm install
+
+COPY . .
 
 EXPOSE 5050
 
