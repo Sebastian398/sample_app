@@ -31,8 +31,12 @@ services:
      dockerfile: Dockerfile.cypress
    depends_on:
      - app
-   user: root
-   entrypoint: ["npm", "run", "cy:run"]
+   environment:
+     - CYPRESS_baseUrl=http://app:5050
+
+   entrypoint: ["npx", "cypress", "run",
+                "--reporter", "mochawesome",
+                "reportDir=mochawesome-report, overwrite=false,html=true,json=false",]
    volumes:
      - .:/e2e
    networks:
