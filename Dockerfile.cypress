@@ -4,6 +4,4 @@ WORKDIR /e2e
 
 COPY . .
 
-RUN npm install --save-dev mochawesome
-
 RUN npm install
