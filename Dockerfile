@@ -11,9 +11,7 @@ RUN npm install --unsafe-perm=true --allow-root
 # Ahora sí, copiar el resto del código
 COPY . .
 
-RUN mkdir -p mochawesome-report 
-
-RUN chmod -R 777 mochawesome-report
+RUN chmod +x ./node_modules/.bin/cypress
 
 EXPOSE 5050
 CMD ["npm", "start"]
