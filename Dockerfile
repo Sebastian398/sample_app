@@ -14,5 +14,7 @@ COPY . .
 # Dar permisos de ejecución al binario cypress si es necesario
 RUN chmod +x ./node_modules/.bin/cypress
 
+RUN chmod -R 777 /e2e/mochawesome-report
+
 EXPOSE 5050
 CMD ["npm", "start"]
