@@ -11,9 +11,6 @@ RUN npm install --unsafe-perm=true --allow-root
 # Ahora sí, copiar el resto del código
 COPY . .
 
-# Dar permisos de ejecución al binario cypress si es necesario
-RUN chmod +x ./node_modules/.bin/cypress
-
 RUN mkdir -p mochawesome-report 
 
 RUN chmod -R 777 mochawesome-report
