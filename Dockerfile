@@ -2,6 +2,8 @@ FROM cypress/base:18.20.3
 
 WORKDIR /app
 
+COPY package*.json ./
+
 # Instalar TODAS las dependencias (incluye devDependencies = Cypress)
 RUN npm install --unsafe-perm=true --allow-root
 
